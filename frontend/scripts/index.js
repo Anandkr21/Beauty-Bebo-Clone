@@ -1,4 +1,3 @@
-
 function responsiveSlider() {
     const slider = document.querySelector('.container');
     let sliderWidth = slider.offsetWidth / 3;

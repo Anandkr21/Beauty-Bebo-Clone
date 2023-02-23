@@ -90,13 +90,14 @@ input[type=text] {
     text-align: center;
     width: 22%;
     height: 108%;
+    cursor: pointer;
     background-color: #dd0285;
 }
 
 .search-icon i {
     margin: 9px;
     color: white;
-    cursor: pointer;
+    
 }
 
 
@@ -155,12 +156,20 @@ input[type=text] {
 }
 
 /***************************** Navigation **********************************/
-
+.navigation{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 70px;
+  background-color: #dd0285;
+}
 .Dropdown-navigation {
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     height: 70px;
     background-color: #dd0285;
     display: flex;
@@ -204,14 +213,7 @@ nav .dropdown button:hover{
   background-color: #cd097f;
 }
 
-/* .header {
-  display: none;
-} */
 
-
-/* body {
-  position: relative;
-} */
 .content {
   display: none;
   position: absolute;

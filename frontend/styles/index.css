@@ -35,7 +35,7 @@ body {
   align-content: center;
   display: flex;
   margin: auto;
-  margin-top: 22px;
+  margin-top: 28px;
   border: 1px solid rgb(210, 217, 210);
 }
 
@@ -108,17 +108,21 @@ input[type=text] {
   width: 20%;
   height: 40%;
   /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
   margin: auto;
 }
 
 .account-box {
+  
   text-align: center;
   display: flex;
+  gap: 10px;
 }
 
 .heart-icon {
   width: 40px;
-  height: 40px;
+  height: 100%;
   margin: auto;
   border: 1px solid black;
   cursor: pointer;
@@ -137,7 +141,7 @@ input[type=text] {
 
 .account-icon {
   width: 40px;
-  height: 40px;
+  height: 100%;
   border: 1px solid rgb(211, 205, 205);
   cursor: pointer;
 
@@ -162,7 +166,7 @@ input[type=text] {
 
 .login-box{
 
-  top: 70px;
+  top: 65px;
   display: none;
   position: absolute;
   z-index: 2;
@@ -173,20 +177,34 @@ input[type=text] {
   height: 90px;
   display: block;
   float: left;
-  background-color: red;
-  
-  
+  background-color: white;
 }
 
+.login-box h6{
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  
+  line-height: 0px;
+}
+.login-box h6:hover{
+  color: #dd0285;
+  text-decoration: none;
+}
+
+.login-box a{
+  text-decoration: none;
+}
 
 
 /***************************** Navigation **********************************/
 .navigation {
   position: sticky;
   width: 100%;
+  height: 50px;
   top: 0;
-  z-index: 1;
-  height: 70px;
+  z-index: 1; 
   background-color: #dd0285;
 }
 
@@ -196,7 +214,7 @@ input[type=text] {
   z-index: 1;
   width: 95%;
   margin: auto;
-  height: 70px;
+  height: 100%;
   background-color: #dd0285;
   display: flex;
 }
@@ -217,7 +235,7 @@ nav {
 
 nav .dropdown button {
   width: max-content;
-  padding: 25px 10px;
+  padding: 15px 10px;
   text-align: center;
   font-weight: 700;
   background: none;
@@ -361,6 +379,8 @@ h3 {
   height: 7px;
   background: #333;
   border-radius: 5px;
+  
+  
 }
 
 .rotate {
@@ -377,7 +397,7 @@ h3 {
 
   .hamburger {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .container {
@@ -951,6 +971,16 @@ input[type=text] {
   }
   .myaccount{
     display: none;
+  }
+
+ 
+  .account-icon:hover .login-box{
+    width: 95px;
+    height: 90px;
+    display: block;
+    float: left;
+    margin-left: -30px;
+    background-color: white;
   }
   .container {
     width: auto;

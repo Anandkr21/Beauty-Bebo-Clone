@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
         href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
     <title>Register</title>
 </head>
+
 <body>
     <div id="head">
         <div class="icon-container">
@@ -61,11 +63,15 @@
 
                 <div class="account-icon"><i class="fa-solid fa-user-large"></i>
                     <div class="login-box">
-                        <a href="login.html"><h6 class="login">Login</h6></a>
-                        <a href="register.html"><h6 class="register">Register</h6></a>
+                        <a href="login.html">
+                            <h6 class="login">Login</h6>
+                        </a>
+                        <a href="register.html">
+                            <h6 class="register">Register</h6>
+                        </a>
                     </div>
                 </div>
-                
+
                 <div class="myaccount">My Account</div>
             </div>
         </div>
@@ -428,9 +434,56 @@
 
     <!----------------------- CREATE NEW CUSTOMER ACCOUNT ------------------------>
 
-    <div class="register-page"></div>
 
-    
+
+    <div class="register-page">
+        <div class="register-container">
+            <h1>CREATE NEW CUSTOMER ACCOUNT
+            </h1>
+            <div class="fb-google">
+                <div class="facebook">
+                    <div class="facebook-box">
+                        <div class="facebook-icon">
+                            <i class="fa-brands fa-facebook-f" style="color:white"></i>
+                        </div>
+                        <div class="signin">
+                            <h6>Sign in with facebook</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="google">
+                    <div class="google-box">
+                        <div class="google-icon">
+                            <i class="fa-brands fa-google" style="color:white"></i>
+                        </div>
+                        <div class="google">
+                            <h6>Sign in with google</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="or">--OR--</h1>
+
+            <!-- Register form section  -->
+            <div class="register-form">
+                <div class="register">
+                    <h4>Register New Account</h4>
+                </div>
+                <form class="input">
+                    <input type="text" name="" id="fname" placeholder="First Name*">
+                    <input type="text" name="" id="lname" placeholder="Last Name*">
+                    <input type="text" name="" id="mail" placeholder="Email Address*"><br>
+                    <p>Your email address will be used to send order invoice, order updates etc.</p><br>
+                    <input type="password" id="pass" placeholder="Enter Password"><br>
+                    <input type="submit" name="" value="proceed" class="button"><br>
+                    <h6>Already Registered? <b>LOGIN</b></h6>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
     <!------------------------------- footer goes here  ------------------------------>
     <footer>
         <div class="footer-content">
@@ -491,4 +544,5 @@
         </div>
     </footer>
 </body>
+
 </html>

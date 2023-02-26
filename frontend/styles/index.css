@@ -745,10 +745,6 @@ li {
 
 }
 
-
-
-
-
 .product img{
   width: 90%;
   height: 60%;
@@ -829,7 +825,7 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .h4 {
@@ -842,7 +838,7 @@ li {
 .best-seller-product{
   width: 100%;
   height: 30%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
 }
 
@@ -864,8 +860,8 @@ li {
 
 .best-seller,
 .latest-product,
-.most-viewed {
-  border: 3px solid green;
+.most-viewed,.best-seller-product {
+  border: 1px solid #ebebeb;
 }
 
 

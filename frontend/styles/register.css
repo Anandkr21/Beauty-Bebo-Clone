@@ -612,10 +612,227 @@ body {
   .register-page{
     width: 100%;
     height: 800px;
-    border: 4px solid red;
+    /* border: 4px solid red; */
   }
 
+  .register-container{
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    /* border: 2px solid black; */
+  }
+
+  .register-container h1{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+
+  }
+.fb-google{
+  width: 70%;
+  height: 40px;
+  display: flex;
+  gap: 5px;
+  margin: auto;
+  /* border: 2px solid red; */
+}
   
+.facebook{
+  width: 50%;
+  height: 100%;
+  /* border: 3px solid green; */
+}
+
+.facebook-box{
+  width: 100%;
+  height: 100%;
+  background-color: #3b5998;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.facebook-icon{
+  width: 10%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+.fa-facebook-f{
+  font-size: 22px;
+}
+
+.signin{
+  width: 80%;
+  height: 100%;
+  color: white;;
+}
+.signin h6{
+  margin-top: 12px;
+  margin-left: 0px;
+  /* border: 3px solid red; */
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+  
+.google{
+  width: 50%;
+  height: 100%;
+  }
+
+.google-box{
+  width: 100%;
+  height: 100%;
+  background-color: #dd4b39;
+  border-radius: 2px;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google-icon{
+  width: 10%;
+  height: 100%;
+  margin: auto;
+  margin-left: 15px;
+  margin-top: 10px;
+  /* border: 4px solid green; */
+}
+
+.google-icon i{
+  font-size: 20px;
+}
+
+.google{
+  width: 50%;
+  height: 100%;
+  color: white;
+ 
+}
+.google h6{
+  margin-top: 12px;
+  margin-left: -50px;
+  /* border: 3px solid red; */
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: sans-serif;
+}
+
+.or{
+  color: #aaa;
+  font-size: 20px;
+}
+
+
+
+   /* Register form part goes here  */
+   .register-form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 550px;
+    /* border: 4px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+
+   .register{
+    font-family: sans-serif;
+    background-color: rgb(249, 250, 253);
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 17px;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+
+   }
+
+     
+  .input input[type=text] {
+    width: 85%;
+    height: 100%;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica, Arial, sans-serif;
+    padding: 8px;
+    display: inline-block;
+    /* outline: none; */
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 3px;
+    /* background-color:#333; */
+  
+  }
+   .input{  
+    width: 80%;
+    margin: auto;
+    /* margin-left: 5%; */
+    /* border: 2px solid red; */
+      }
+   .input>input[type='text']{
+    width: 94%;
+    height: 40px;
+    height: auto;
+    margin-top: 30px;
+}
+.input>input[type='number']{
+  width: 94%;
+  height: 40px;
+  margin-top: 10px;
+
+
+}
+
+.button{
+  margin-top: 30px;
+  padding: 4px 170px;
+  text-transform: uppercase;
+  background-color: #dd0285;
+  border: none;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 40px;
+  font-weight: 900;
+  font-size: 14px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+.button:hover{
+  background-color: #dd0285;
+}
+p{
+  color: grey;
+  font-size: 15px;
+}
+
+h6{
+  color: grey;
+  text-align: center;
+  font-weight: 1000;
+  font-family: verdana;
+  margin-top: 10px;
+}
+b{
+  color: #dd0285;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+
+
+
 /********************** footer  **********************/
 
 footer {
@@ -732,11 +949,12 @@ footer {
     font-weight: 600;
   }
   
-  input[type=text] {
-    width: 100%;
-    height: 100%;
-    border-radius: 4px 0px 0px 4px;
+  input[type=text],input[type=password]{
+    width: 95%;
+    height: 30px;
+    border-radius: 4px 4px 4px 4px;
   }
+  
   
   .signupbox {
     width: 50%;
@@ -800,6 +1018,23 @@ footer {
       grid-template-columns: repeat(1,1fr);
     }
   
+    /* .register- page section  */
+
+    .facebook-icon, .google-icon{
+      margin-left: 25px;
+    }
+    .signin h6, .google h6{
+      display: none;
+    }
+
+    #pass{
+      margin-top: -20px;
+    }
+    .button{
+      margin-top: 5px;
+      padding: 0px 40px; 
+    }
+
     footer{
       height: 750px;
     }

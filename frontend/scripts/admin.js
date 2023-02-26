@@ -34,7 +34,7 @@ myform.addEventListener("submit", (e) => {
 })
 
 function addProduct(obj){
-    fetch("https://colambia-api.onrender.com/AllProduct",{
+    fetch("https://localhost:1010/posts/create",{
         method : "POST",
         headers: {
             "Content-Type": "application/json",

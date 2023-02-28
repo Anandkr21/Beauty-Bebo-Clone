@@ -1,6 +1,3 @@
-
-
-
 // carousal
 function responsiveSlider() {
   const slider = document.querySelector('.container');
@@ -49,37 +46,72 @@ window.onload = function() {
 
 
 
-// navbar 
-$(document).ready(function() {
-  $("div.dropdown button").click((event) => {
-    if($(event.target).next().css('display') == 'flex'){
-      $(event.target).next().css('display', 'none');
-      $(event.target).children().removeClass('rotate');
-    } else if($(event.target).next().css('display') == 'none'){
-      $(event.target).next().css('display', 'flex');
-      $(event.target).children().addClass('rotate');
-    }
-  });
-  
-  $('.hamburger').click(() => {
-    if($('nav').css('display') == 'none'){
-      $('nav').css('display', 'flex').css('animation-name', 'navAnim').addClass('animInfo').css('animation-duration', '.5s');
-      $('.hamburger :nth-child(1)').css('animation-name', 'bar1Anim').addClass('animInfo');
-      $('.hamburger :nth-child(2)').css('animation-name', 'bar2Anim').addClass('animInfo');
-      $('.hamburger :nth-child(3)').css('animation-name', 'bar3Anim').addClass('animInfo');
-    } else if($('nav').css('display') == 'flex'){
-      $('nav').css('display', 'none').css('animation-name', 'navAnimReverse').css('animation-duration', '.5s');
-      $('.hamburger :nth-child(1)').css('animation-name', 'bar1AnimReverse');
-      $('.hamburger :nth-child(2)').css('animation-name', 'bar2AnimReverse');
-      $('.hamburger :nth-child(3)').css('animation-name', 'bar3AnimReverse');
-    }
-  });
-  
-  if ($(window).width() > 800 ) {
-    $('nav').removeClass('animInfo').css('animation-name', 'unset').css('opacity', '1');
+
+
+
+    
+let data=JSON.parse(localStorage.getItem('cart')) || []
+let url='http://localhost:1010/posts/'
+
+async function getdata(){
+  try{
+    let res= await fetch(url)
+    let out = await res.json()
+    // console.log(out)
+    data=out
+    console.log(data)
+    display(data)
+  }
+  catch(err){
+    alert(err)
+  }
 }
-});
 
+getdata()
 
+function display(data){
+  // console.log(data)
+  document.querySelector('.container>ul').textContent=null;
+  data.forEach((el) => {
+    console.log(el.title)
 
+    let div =document.createElement('div')
+    div.setAttribute('class','box')
 
+    let img=document.createElement('img')
+    img.setAttribute('class','imgdiv')
+    img.setAttribute('src',el.img)
+
+    let title=document.createElement('h4')
+    title.setAttribute('class','title')
+    title.textContent=el.title.substring(0,30)
+    
+    let price=document.createElement('h4')
+    price.setAttribute('class','price')
+    price.textContent='₹ '+el.price
+
+    let ofr=document.createElement('p')
+    ofr.setAttribute('class','ofrprice')
+    ofr.textContent='Offer Price'
+
+    let btn=document.createElement('button')
+    btn.textContent="Add to Cart"
+
+    btn.addEventListener('click', function(){
+        // addcart(el,ind)
+
+        let cartdata = JSON.parse(localStorage.getItem('cart')) || []
+
+        let temp=[]
+        temp.push(el)
+        temp.push(1)
+
+        cartdata.push(temp)
+        localStorage.setItem('cart',JSON.stringify(cartdata))
+      })
+
+    div.append(img,title,ofr,price,btn)
+    document.querySelector('.container>ul').append(div)
+  
+  });
+}

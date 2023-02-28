@@ -5,7 +5,6 @@ const productSchema=mongoose.Schema({
     img:String,
     category:String,
     price:Number
-    
 })
 
 const postModel=mongoose.model('allproduct',productSchema)

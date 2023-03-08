@@ -22,3 +22,18 @@ const login=()=>{
     window.open("./index.html")
     
 }
+
+
+
+/// Go to cart page onclick
+
+let carticon=document.querySelector('.fa-bag-shopping')
+let mycart=document.querySelector('#cart')
+
+carticon.addEventListener('click', () =>{
+  window.location='./cart.html'
+})
+
+mycart.addEventListener('click', () =>{
+  window.location='./cart.html'
+})

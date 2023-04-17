@@ -1,10 +1,10 @@
 const express=require('express')
 const jwt=require('jsonwebtoken')
 const bcrypt=require('bcrypt')
-
 const {userModel}=require('../model/users.model')
 const userRouter=express.Router()
 
+// User Signup
 userRouter.post('/register', async(req,res) =>{
     const{name,email,gender,pass,age,city}= req.body;
     try {
@@ -22,7 +22,7 @@ userRouter.post('/register', async(req,res) =>{
     }
 })
 
-
+// User Login 
 userRouter.post('/login', async(req,res) =>{
     const {email,pass} =(req.body)
     try {
@@ -31,7 +31,7 @@ userRouter.post('/login', async(req,res) =>{
             bcrypt.compare(pass,user[0].pass, (err,result) =>{
                 if (result) {
                     let token=jwt.sign({userid:user[0]._id}, 'anand')
-                    res.send({'msg':'Login successfully', 'token':token})
+                    res.send({'msg':'Login Successfully', 'token':token})
                 } else {
                     res.send({"msg":'something wrong'})
                 }
@@ -45,6 +45,10 @@ userRouter.post('/login', async(req,res) =>{
 })
 
 
+// User Logout
+userRouter.post('/logout', (req,res) =>{
+    res.send('You are Successfully Logout')
+})
 
 module.exports={
     userRouter

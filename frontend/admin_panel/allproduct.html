@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="./css/allproduct.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="navigator">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="../admin_panel/dashboard.html">Dashboard</a>
+                    <a href="#">All Products</a>
+                    <a href="../admin_panel/addproduct.html">Add Product</a>
+                    <a id="logout" onclick="adminlogout()">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="myform">
+            <h1 class="admin">List of All Products</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="firstrow">Product Images</th>
+                        <th>Category</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Append all the rows here  -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <span class="notification" id="out"> ✅ Logout Succesfully</span>
+</body>
+<script src="./js/allproduct.js"></script>
+
+</html>

@@ -61,7 +61,7 @@ mycart.addEventListener('click', () => {
 
 
 
-//             api fetching here                   //
+//             API fetching here                   //
 
 let data = JSON.parse(localStorage.getItem('cart')) || []
 let url = 'http://localhost:1010/posts/'
@@ -86,7 +86,7 @@ function display(data) {
   // console.log(data)
   document.querySelector('.container>ul').textContent = null;
   data.forEach((el) => {
-    console.log(el.title)
+    // console.log(el.title)
 
     let div = document.createElement('div')
     div.setAttribute('class', 'box')

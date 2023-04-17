@@ -6,7 +6,7 @@ const userSchema=mongoose.Schema({
     pass:String
 })
 
-const userModel=mongoose.model('user',userSchema)
+const userModel=new mongoose.model('user',userSchema)
 
 module.exports={
     userModel

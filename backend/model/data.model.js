@@ -7,7 +7,7 @@ const productSchema=mongoose.Schema({
     price:Number
 })
 
-const postModel=mongoose.model('allproduct',productSchema)
+const postModel= new mongoose.model('allproduct',productSchema)
 
 module.exports={
     postModel

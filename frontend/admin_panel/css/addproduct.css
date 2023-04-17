@@ -49,6 +49,7 @@
     margin-top: 30%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .links>a {
@@ -86,8 +87,9 @@
 
 .myform {
     width: 80%;
-    margin-left: 18%;
     
+    margin-left: 20%;
+   
     background-color: white;
 }
 
@@ -95,9 +97,11 @@ form{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     padding: 15px;
-    width: 50%;
+    width: 60%;
+    height: 60%;
     margin: auto;
     margin-top: 8%;
+    align-items: center;
 }
 form>div{
     /* border: 1px solid black; */
@@ -147,10 +151,8 @@ form>div:nth-child(11)>input{
     /* border: 2px solid red; */
 }
 form input:focus{
-    outline: #dd0285;
-    border: none;
+    outline: none;
     /* box-shadow: rgba(0,122,184, 0.24) 0px 3px 8px; */
-    box-shadow: rgb(253, 0, 220) 0px 0px 0px 2px, rgba(255, 0, 204, 0.96) 0px 4px 6px -1px, rgba(0,122,184, 0.08) 0px 1px 0px inset;
 }
 
 .notification{

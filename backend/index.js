@@ -25,7 +25,7 @@ app.use('/posts', postRouter)
 app.listen(process.env.port, async() =>{
     try {
         await connection
-        console.log('Connected to DB')
+        console.log('Connected to MongoDB')
     } catch (err) {
         console.log(err.message)
     }

@@ -38,13 +38,31 @@ function display(data) {
         price.setAttribute('class', 'price')
         price.textContent = '₹ ' + element.price;
 
-        row.append(img, category, title, price)
+        let edit = document.createElement('td')
+        edit.setAttribute('class', 'editbtn')
+        edit.textContent = 'Edit';
+
+        let deletebutton = document.createElement('td')
+        deletebutton.setAttribute('class', 'deletebtn')
+        deletebutton.textContent = 'Delete';
+
+        deletebutton.addEventListener('click', () => {
+            console.log('hello');
+            fetch(`http://localhost:1010/posts/delete/${element._id}`, {
+                method: "DELETE",
+                headers: {
+                    Authorization: localStorage.getItem('token')
+                }
+            })
+        })
+
+        row.append(img, category, title, price, edit, deletebutton)
         document.querySelector('tbody').append(row)
     });
 }
 
 
-function adminlogout(){
+function adminlogout() {
     alert('You are Logout Successfully !')
     window.location = '';
 }

@@ -69,7 +69,24 @@
     width: 100%;
 }
 
+.editbtn, .deletebtn{
+    color: green;
+    font-size: 22px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.deletebtn{
+    color:  #dd0285;
+}
 
+.editbtn:hover{
+    color: white;
+    background-color: green;
+}
+.deletebtn:hover{
+    background-color:  #dd0285;
+    color: white;
+}
 .myform {
     width: 80%;
     margin-left: 20%;

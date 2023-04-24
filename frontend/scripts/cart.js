@@ -6,7 +6,7 @@ function display(cartdata) {
     cartdata.forEach((el, ind) => {
 
         let div = document.createElement('div')
-        div.setAttribute('class', 'watch-div')
+        div.setAttribute('class', 'bag')
 
         let img = document.createElement('img')
         img.setAttribute('class', 'imgdiv')
@@ -35,7 +35,7 @@ function display(cartdata) {
                 el[1]--;
                 total -= Number(el[0].price);
 
-                document.querySelector('#total').textContent = total;
+                document.querySelector('.total').textContent = total;
 
                 localStorage.setItem('cart', JSON.stringify(cartdata))
                 qt.textContent--;
@@ -57,7 +57,7 @@ function display(cartdata) {
         inc.addEventListener('click', function () {
             el[1]++;
             total += Number(el[0].price);
-            document.querySelector('#total').textContent = total;
+            document.querySelector('.total').textContent = total;
 
             qt.textContent++
             localStorage.setItem('cart', JSON.stringify(cartdata))
@@ -81,7 +81,7 @@ function display(cartdata) {
 }
 
 let total = cartdata.reduce((acc, el) => acc + Number(el[0].price), 0)
-document.querySelector('#total').textContent = total;
+document.querySelector('.total').textContent = total;
 
 
 
@@ -89,4 +89,11 @@ document.querySelector('#total').textContent = total;
 function placed() {
     alert('Order Placed with ❤')
     window.location = 'orderplaced.html'
+}
+
+
+function placed(){
+    alert('Your Order is placed Successfully, Thank you, Visit again!😊')
+    window.localStorage.clear()
+    window.location='./index.html'
 }

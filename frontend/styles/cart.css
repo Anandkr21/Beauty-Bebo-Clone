@@ -607,7 +607,91 @@ body {
     cursor: pointer;
   }
   
+
+  /***********************Cart section ******************/
+.cart{
+  /* border: 2px solid black; */
+  display: flex;
+  row-gap: 90px;
+  column-gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cart-section{
+  width: 100%;
+  /* border: 4px solid red; */
+}
+.bag{
+  width: 920px;
+  /* border: 4px solid green; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.bag button{
+  margin-top: 30px;
+  height: 30px;
+  width: 7%;
+  background-color: #dd0285;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.bag span{
+  margin-top: 30px;
+  height: 20px;
+ 
+}
+.imgdiv{
+  /* border: 4px solid red; */
+  width: 150px;
+ 
+}
+
+
+/* Cart total */
+
+.right-cart{
+  margin-top: 20px;
+  width: 30%;
+  height: 400px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  /* border: 4px solid blue; */
+}
+.right-cart h4, h3{
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+.summary{
+  display: flex;
+  justify-content: space-around;
+}
+.summary p {
+  font-size: 22px;
+}
+
+.free{
+  color: green;
+  font-size: 20px;
+}
+.checkoutbtn{
+  padding: 15px 80px;
+  margin-left: 90px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  background-color:  #dd0285;
+  cursor: pointer;
+}
+
   
+
+
   /****************************** CREATE NEW CUSTOMER ACCOUNT ******************************/
   
   

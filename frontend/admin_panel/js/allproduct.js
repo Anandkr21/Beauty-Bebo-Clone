@@ -1,4 +1,3 @@
-let allproduct = JSON.parse(localStorage.getItem('product')) || [];
 let url = 'http://localhost:1010/posts/'
 
 async function getdata() {

@@ -43,6 +43,7 @@ function addProduct(obj){
     })
 }
 let logout=document.getElementById("out")
+
 let log=document.getElementById("logout");
 log.addEventListener("click",()=>{
     logout.style.display = "inline"

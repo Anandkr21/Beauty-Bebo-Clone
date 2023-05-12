@@ -69,6 +69,7 @@ function display(cartdata) {
 
         let btn = document.createElement('button')
         btn.textContent = "Remove"
+        
         btn.addEventListener('click', function () {
             cartdata.splice(el, 1)
             localStorage.setItem('cart', JSON.stringify(cartdata))

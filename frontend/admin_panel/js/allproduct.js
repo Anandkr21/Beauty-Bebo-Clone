@@ -53,6 +53,7 @@ function display(data) {
                     Authorization: localStorage.getItem('token')
                 }
             })
+            window.location.reload()
         })
 
         row.append(img, category, title, price, edit, deletebutton)
@@ -62,6 +63,8 @@ function display(data) {
 
 
 function adminlogout() {
+
+    localStorage.setItem('token',null);
     alert('You are Logout Successfully !')
-    window.location = '';
+    window.location = '../index.html'
 }

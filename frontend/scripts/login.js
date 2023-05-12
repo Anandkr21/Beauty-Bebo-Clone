@@ -14,12 +14,21 @@ const login=()=>{
     })
     .then(res=>res.json())
     .then(res=>{
-        console.log(res)
-        localStorage.setItem('token',token)
+        if( res.msg == "Login Successfully"){
+            if(res.role == "Admin"){
+                localStorage.setItem('token',res.token);
+                window.location.href="./admin_panel/allproduct.html"
+            }else{
+                localStorage.setItem('token',res.token);
+                window.location.href="./index.html"
+            }
+        }else{
+            alert(res.msg)
+        }
     })
     .catch(err=>console.log(err))
 
-    window.open("./index.html")
+    // window.open("./index.html")
     
 }
 

@@ -121,10 +121,14 @@ function display(data) {
 
       cartdata.push(temp)
       localStorage.setItem('cart', JSON.stringify(cartdata))
+      alert('Product Added')
+
     })
 
     div.append(img, title, ofr, price, btn)
     document.querySelector('.container>ul').append(div)
 
   });
+
 }
+

@@ -1,10 +1,11 @@
 const express = require('express')
 const postRouter = express.Router()
 const { postModel } = require('../model/data.model')
-
+const {authentication} = require('../middlewares/authentication')
+const {authorise} = require('../middlewares/authorise')
 
 // C -> Create
-postRouter.post('/create', async (req, res) => {
+postRouter.post('/create', authentication, async (req, res) => {
     const payload = req.body;
     const post = new postModel(payload)
     await post.save()
@@ -30,7 +31,7 @@ postRouter.patch('/update/:id', async (req, res) => {
 })
 
 // D -> Delete
-postRouter.delete('/delete/:id', async (req, res) => {
+postRouter.delete('/delete/:id',  async (req, res) => {
     const id = req.params.id;
     await postModel.findByIdAndDelete({ _id: id })
     res.send({ 'msg': `Product with id: ${id} has been deleted` })

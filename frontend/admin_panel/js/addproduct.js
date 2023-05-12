@@ -7,7 +7,7 @@ function addNewProduct() {
         price: document.querySelector('#Price').value,
     }
 
-    fetch('http://localhost:1010/posts/create', {
+    fetch('https://beauty-queen.onrender.com/posts/create', {
         method: 'POST',
         headers: {
             "Content-type": "application/json",

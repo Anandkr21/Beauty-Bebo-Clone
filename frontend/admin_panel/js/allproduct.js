@@ -1,12 +1,13 @@
-let url = 'http://localhost:1010/posts/'
+let url = 'https://beauty-queen.onrender.com/posts/'
 
 async function getdata() {
     try {
         let res = await fetch(url)
         let out = await res.json()
         data = out;
-        // console.log(data)
+        console.log(data)
         display(data)
+
     } catch (error) {
         console.log(error)
     }
@@ -47,7 +48,7 @@ function display(data) {
 
         deletebutton.addEventListener('click', () => {
             console.log('hello');
-            fetch(`http://localhost:1010/posts/delete/${element._id}`, {
+            fetch(`https://beauty-queen.onrender.com/posts/delete/${element._id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: localStorage.getItem('token')

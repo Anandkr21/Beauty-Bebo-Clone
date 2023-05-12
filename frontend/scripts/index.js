@@ -64,7 +64,7 @@ mycart.addEventListener('click', () => {
 //             API fetching here                   //
 
 let data = JSON.parse(localStorage.getItem('cart')) || []
-let url = 'http://localhost:1010/posts/'
+let url = 'https://beauty-queen.onrender.com/posts/'
 
 async function getdata() {
   try {

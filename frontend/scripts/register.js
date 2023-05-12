@@ -6,7 +6,7 @@ const signup=()=>{
             email:document.getElementById('mail').value,
             pass:document.getElementById('pass').value
         }
-        fetch('http://localhost:1010/users/register',{
+        fetch('https://beauty-queen.onrender.com/users/register',{
             method:'POST',
             headers:{ 
                 'Content-type':'application/json'

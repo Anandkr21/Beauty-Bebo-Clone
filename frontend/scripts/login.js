@@ -5,7 +5,7 @@ const login=()=>{
         email:document.getElementById('mail').value,
         pass:document.getElementById('pass').value
     }
-    fetch('http://localhost:1010/users/login',{
+    fetch('https://beauty-queen.onrender.com/users/login',{
         method:'POST',
         headers:{
             'Content-type':'application/json'

@@ -34,7 +34,7 @@ myform.addEventListener("submit", (e) => {
 })
 
 function addProduct(obj){
-    fetch("https://localhost:1010/posts/create",{
+    fetch("https://beauty-queen.onrender.com/posts/create",{
         method : "POST",
         headers: {
             "Content-Type": "application/json",

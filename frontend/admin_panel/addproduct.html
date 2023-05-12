@@ -21,12 +21,11 @@
                     <img src="./images/logo.png" alt="">
                 </div>
                 <div class="links">
-                    <a href="../admin_panel/adminlogin.html">Admin Panel</a>
-                    <a href="../admin_panel/dashboard.html">Dashboard</a>
+                    
                     <a href="../admin_panel/allproduct.html">All Products</a>
                     <a href="#">Add Product</a>
                     <a href="../index.html">Go to Website</a>
-                    <a id="logout">Logout</a>
+                    <a id="logout" onclick="adminlogout()">Logout</a>
                 </div>
             </div>
         </div>
@@ -34,6 +33,7 @@
             <h1 class="admin">Add New Product</h1>
 
             <form>
+                
                 <div>
                     <span>Title :</span>
                     <input type="text" placeholder="Title" id="title">
@@ -50,8 +50,8 @@
                     <span>Price :</span>
                     <input type="text" placeholder="Price" id="Price">
                 </div>
-                
-                
+
+
                 <div>
                     <input type="submit" id="submit" value="Add" onclick="addNewProduct()">
                 </div>

@@ -5,7 +5,7 @@ const login=()=>{
         email:document.getElementById('mail').value,
         pass:document.getElementById('pass').value
     }
-    fetch('http://localhost:1010/users/login',{
+    fetch('https://beauty-queen.onrender.com/users/login',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
@@ -14,12 +14,21 @@ const login=()=>{
     })
     .then(res=>res.json())
     .then(res=>{
-        console.log(res)
-        localStorage.setItem('token',token)
+        if( res.msg == "Login Successfully"){
+            if(res.role == "Admin"){
+                localStorage.setItem('token',res.token);
+                window.location.href="./admin_panel/allproduct.html"
+            }else{
+                localStorage.setItem('token',res.token);
+                window.location.href="./index.html"
+            }
+        }else{
+            alert(res.msg)
+        }
     })
     .catch(err=>console.log(err))
 
-    window.open("./index.html")
+    // window.open("./index.html")
     
 }
 

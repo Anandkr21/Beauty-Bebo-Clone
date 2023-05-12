@@ -64,7 +64,7 @@ mycart.addEventListener('click', () => {
 //             API fetching here                   //
 
 let data = JSON.parse(localStorage.getItem('cart')) || []
-let url = 'http://localhost:1010/posts/'
+let url = 'https://beauty-queen.onrender.com/posts/'
 
 async function getdata() {
   try {
@@ -121,10 +121,14 @@ function display(data) {
 
       cartdata.push(temp)
       localStorage.setItem('cart', JSON.stringify(cartdata))
+      alert('Product Added')
+
     })
 
     div.append(img, title, ofr, price, btn)
     document.querySelector('.container>ul').append(div)
 
   });
+
 }
+

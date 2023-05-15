@@ -5,8 +5,8 @@
 
 > Project Code : trite-fog-8077- <br/>
 
-- Deployed Website = https://stalwart-sunburst-41190b.netlify.app/
-- Deployed Backend = https://backendbcs-xdos.vercel.app/
+- Website Deployed Link = https://stalwart-sunburst-41190b.netlify.app/
+- Backend Deployed Link = https://beauty-queen.onrender.com/
 
 
 <p align="center">
@@ -93,8 +93,7 @@
 
 - Type : Individual Project
 - Duration of Project - 5 Days
-  - ## Authors
-
+  - ### Author
 - [@Anand Kumar](https://www.linkedin.com/in/anandkr21/) 
 ---
 <!-- <a href="https://www.linkedin.com/in/anandkr21/">Anand Kumar</a> -->

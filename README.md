@@ -1,3 +1,4 @@
+![BeautyQueen](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/4daff765-d61d-4411-80a1-e8096182d194)
 
  <a href="https://stalwart-sunburst-41190b.netlify.app/"> 👉 Visit here</a>
 
@@ -32,6 +33,7 @@
 - Remove from cart
 - Admin Panel
 - CRUD operations
+  - Admin can see all products, Add products, Delete products and Edit products.
 
 ---
 
@@ -43,13 +45,6 @@
 | HTML | CSS     | JavaScript                       |
 | :-------- | :------- | :-------------------------------- |
 | <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png">      | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> | <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> |
-
-
-<!-- 
-
-| HTML                                                                                                                                                                                                                                                                                                                                                           | CSS                                                                                                                           | JavaScript 
-  | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-|  <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png">  |  <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> | -->
 
 ---
 
@@ -70,6 +65,24 @@
 
 <br/>
 
+## Screenshots
+### Landing Page
+![1](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/ac06313b-2213-4311-aa1f-82ba048a20cb)
+### Mega Menu
+![2](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/1fb10135-a1e9-43d5-aee4-9f61085e6d1b)
+### Latest & Offer Products
+![3](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/0309fb80-5b9b-4672-b991-352ce1988612)
+### Cart Section
+![5](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/aadd20cf-a80b-45aa-b013-77cd9e5db8d5)
+### Login Page
+![6](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/0841f985-6e77-4124-a952-9a0b1ed2002a)
+### Footer of website
+![4](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/582b1d10-f1f3-43c9-a97f-9b1ca66541b8)
+### Admin Page
+![7](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/37c275fa-784a-4dea-83d7-87bed3e85884)
+### Add Products 
+![8](https://github.com/Anandkr21/trite-fog-8077-/assets/113422735/a879f69d-fe9b-4672-b84d-73394d51f278)
+
 ---
 
 ## <br/>
@@ -80,8 +93,11 @@
 
 - Type : Individual Project
 - Duration of Project - 5 Days
-  - <a href="https://www.linkedin.com/in/anandkr21/">Anand Kumar</a>
+  - ## Authors
+
+- [@Anand Kumar](https://www.linkedin.com/in/anandkr21/) 
 ---
+<!-- <a href="https://www.linkedin.com/in/anandkr21/">Anand Kumar</a> -->
 
 <br/>
 

@@ -65,7 +65,7 @@ function display(data) {
 
 function adminlogout() {
 
-    localStorage.setItem('token',null);
+    localStorage.setItem('token', null);
     alert('You are Logout Successfully !')
     window.location = '../index.html'
 }

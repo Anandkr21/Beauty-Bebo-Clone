@@ -1,14 +1,12 @@
-const mongoose=require('mongoose')
+const mongoose = require('mongoose')
 
-const productSchema=mongoose.Schema({
-    title:String,
-    img:String,
-    category:String,
-    price:Number
+const productSchema = mongoose.Schema({
+    title: String,
+    img: String,
+    category: String,
+    price: Number
 })
 
-const postModel= new mongoose.model('allproduct',productSchema)
+const postModel = new mongoose.model('allproduct', productSchema)
 
-module.exports={
-    postModel
-}
+module.exports = { postModel }

@@ -12,7 +12,7 @@ let myform = document.querySelector("form");
 myform.addEventListener("submit", (e) => {
     e.preventDefault();
     if (title.value == "" || image_1.value == "" || price.value == "" || Category.value == "") {
-        
+
         Errors.style.display = "inline"
         setTimeout(() => {
             Errors.style.display = "none"
@@ -30,22 +30,23 @@ myform.addEventListener("submit", (e) => {
         }
         addProduct(obj);
     }
-
 })
 
-function addProduct(obj){
-    fetch("https://beauty-queen.onrender.com/posts/create",{
-        method : "POST",
+function addProduct(obj) {
+    fetch("https://beauty-queen.onrender.com/posts/create", {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
-          },
-        body : JSON.stringify(obj)
+        },
+        body: JSON.stringify(obj)
     })
 }
-let logout=document.getElementById("out")
 
-let log=document.getElementById("logout");
-log.addEventListener("click",()=>{
+
+let logout = document.getElementById("out")
+
+let log = document.getElementById("logout");
+log.addEventListener("click", () => {
     logout.style.display = "inline"
     setTimeout(() => {
         logout.style.display = "none";

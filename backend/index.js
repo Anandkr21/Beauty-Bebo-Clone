@@ -1,17 +1,16 @@
-const express = require('express')
+const express = require('express');
 
-const { connection } = require('./config/db')
-const { userRouter } = require('./routes/user.Routes')
-const { postRouter } = require('./routes/data.Routes')
+const { connection } = require('./config/db');
+const { userRouter } = require('./controller/user');
+const { postRouter } = require('./controller/data');
 
-const { authentication } = require('./middlewares/authentication')
-require('dotenv').config()
+require('dotenv').config();
 
-const cors = require('cors')
+const cors = require('cors');
 
-const app = express()
-app.use(express.json())
-app.use(cors())
+const app = express();
+app.use(express.json());
+app.use(cors());
 
 
 app.get('/', (req, res) => {
@@ -19,7 +18,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/users', userRouter)
-// app.use(authentication)
 app.use('/posts', postRouter)
 
 app.listen(process.env.port, async () => {
